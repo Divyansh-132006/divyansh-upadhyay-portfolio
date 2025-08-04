@@ -141,9 +141,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // Toggle social icons visibility with animation
   connectBtn.addEventListener('click', function() {
-    socialIcons.classList.toggle('show');
-    
-    // Add staggered animation if showing icons
+    socialIcons.classList.toggle('show')
     if (socialIcons.classList.contains('show') && window.gsap) {
       gsap.from('.circle', {
         duration: 0.5,
@@ -155,6 +153,23 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 });
+
+// document.getElementsByName('connectBtn').addEventListener('click', () =>{
+//   const socialIcons = document.getElementById('socialIcons');
+  
+//   socialIcons.classList.toggle('show');
+  
+//   // // Add staggered animation if showing icons
+//   // if (socialIcons.classList.contains('show') && window.gsap) {
+//   //   gsap.from('.circle', {
+//   //     duration: 0.5,
+//   //     opacity: 0,
+//   //     y: 20,
+//   //     stagger: 0.1,
+//   //     ease: "power2.out"
+//   //   });
+//   // }
+// })
 
 
 
