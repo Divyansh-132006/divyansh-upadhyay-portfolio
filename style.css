@@ -10,7 +10,7 @@ body {
   color: white;
   overflow-x: hidden;
 }
-
+ 
 a {
   text-decoration: none;
   color: inherit;
@@ -19,6 +19,7 @@ a {
 button {
   cursor: pointer;
   padding: 8px 16px;
+  margin-top: 12px;
   background-color: #333;
   color: white;
   border: none;
@@ -94,6 +95,21 @@ nav {
   background-color: white;
   transition: width 0.3s ease;
 }
+#socialIcons {
+  display: none;
+  transition: all 0.3s ease;
+
+}
+.contain{
+  display:none;
+}
+#socialIcons.show {
+  display: flex;
+  margin: 23px;
+}
+.circle{
+  margin: 9px;
+}
 
 .navhidden a li:hover::after {
   width: 100%;
@@ -140,7 +156,8 @@ nav {
 
 /* Second Half Styles */
 .secondhalf {
-  padding: 50px 5%;
+  padding: 50px;
+  padding-bottom: 0px;
   background-color: #111;
 }
 
@@ -184,6 +201,12 @@ nav {
 
 .card p {
   padding: 20px;
+  padding-bottom: 10px;
+  line-height: 1.5;
+  color: #ddd;
+}
+.card ol {
+  padding: 6px;
   line-height: 1.5;
   color: #ddd;
 }
